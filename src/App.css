@@ -1,0 +1,85 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+  padding: 40px;
+  font-family: Arial;
+}
+
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-image: linear-gradient(red, orange, yellow);
+  color: rgb(17, 16, 16);
+}
+
+.footer{
+  background-image: linear-gradient(red, orange, yellow);
+  padding: 10px;
+  text-align: center;
+  color: rgb(17, 16, 16);
+}
+
+.img-container {
+  padding: 1rem; 
+  bottom: 0;
+  left: 0;
+  width: 50px;
+}
+
+.beerContainer {
+  background-color: #343428;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid palevioletred;
+  border-radius: 3px; 
+  text-align: left;
+}
+
+.beerName {
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.beerDesc{
+  text-align: left;
+  justify-content: center;  
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.button {
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid palevioletred;
+  border-radius: 3px; 
+  text-align: left;
+}
+
+.beerSearchInput {
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid palevioletred;
+  border-radius: 3px; 
+}
+
+.radio-button{
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+.beerIcon {
+  height: 4em;
+  padding-right: 10px;
+}
+
+.errorMsg{
+  color: "#F61C04";
+}
