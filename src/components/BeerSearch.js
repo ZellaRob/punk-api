@@ -66,7 +66,7 @@ class BeerSearch extends React.Component {
   }
 
   urlPatternValidation = input => {
-    const regex = new RegExp(/^[0-9A-Za-z_-]+$/);
+    const regex = new RegExp(/^[0-9A-Za-z_-\s]+$/);
     return regex.test(input);
   };
 
