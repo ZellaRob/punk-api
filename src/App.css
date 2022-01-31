@@ -81,5 +81,6 @@
 }
 
 .errorMsg{
-  color: "#F61C04";
+  color: red;
+  padding-top: 15px;
 }
