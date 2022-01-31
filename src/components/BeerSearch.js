@@ -1,5 +1,6 @@
 import React from 'react'
 import { instance } from './instance.js';
+import TextTruncate from 'react-text-truncate';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -73,11 +74,11 @@ class BeerSearch extends React.Component {
     const { isTrueVal } = this.state;
     return (
       <div className='beerContainer'>
-        <input className='beerSearchInput' type="search" onChange={this.handleInputChange} value={this.state.searchField} />
         {!this.state.isTrueVal && (
           <div className='errorMsg'>Invalid characters, only letters, numbers, hyphens and spaces allowed</div>
         )
         }
+        <input className='beerSearchInput' type="search" onChange={this.handleInputChange} value={this.state.searchField} />
         <div className="radio-button">
           <input type="radio" value="beer_name" name="radio" onChange={this.handleRadioChange} /> Beer Name
         </div>
@@ -93,7 +94,11 @@ class BeerSearch extends React.Component {
                   {<img alt='previewImg' src={item.imageURL} className="beerIcon" />} {item.name}
                 </div>
                 <div className='beerDesc'>
-                  {item.desc}
+                  <TextTruncate
+                    line={1}
+                    element="span"
+                    truncateText="…"
+                    text={item.desc} />
                 </div>
               </div>
             ))}
