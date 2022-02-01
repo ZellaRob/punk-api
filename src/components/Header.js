@@ -4,7 +4,7 @@ function Header() {
   return (
     <div className="header">
       <header>
-        <h1>Time for a beer!</h1>
+        <h1>PunkAPI</h1>
       </header>
     </div>
   )
